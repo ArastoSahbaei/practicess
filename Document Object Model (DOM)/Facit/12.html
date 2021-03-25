@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>12</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div>
+            <button onclick="toggleOnOff()">Toggle On Off</button>
+        </div>
+
+        <div id="result" class="dashed">
+        </div>
+
+    </div>
+
+    <script>
+
+        let isOn = false
+
+        render()
+
+        function toggleOnOff() {
+
+            isOn = !isOn   // ! = inte
+
+            // if (isOn === true) {
+            //     isOn = false
+            // } else {
+            //     isOn = true
+            // }
+
+            render()
+        }
+
+        function render() {
+
+
+            document.getElementById("result").innerText = isOn === true ? "On" : "Off"
+
+            // if (isOn === true) {
+
+            //     document.getElementById("result").innerText = "On"
+
+            // } else {
+            //     document.getElementById("result").innerText = "Off"
+
+            // }
+        }
+
+    </script>
+
+</body>
+
+</html>

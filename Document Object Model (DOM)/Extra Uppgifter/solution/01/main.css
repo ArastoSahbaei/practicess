@@ -1,0 +1,28 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width:800px;
+    margin:0 auto;
+    display:grid;
+    grid-template: 
+    '. . .'
+    'menu menu menu'
+    '. . .';
+    grid-template-columns: 150px auto 150px;
+}
+
+.main > * {
+    background-color: rgb(240, 240, 240);
+    border:solid 1px black;
+    padding:20px;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+h1 {
+    margin-top:0
+}

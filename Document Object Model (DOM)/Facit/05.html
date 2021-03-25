@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>05</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <div>
+            <input id="x" />
+        </div>
+
+        <div>
+            <button onclick="addStars()">Add stars</button>
+        </div>
+
+        <div>
+            <button onclick="upper()">Uppercase</button>
+        </div>
+
+        <div id="result" class="dashed">
+        </div>
+    </div>
+
+    <script>
+        function addStars() {
+            const text = document.getElementById("x").value
+            document.getElementById("result").innerText = `*${text}*`
+        }
+
+        function upper() {
+            const text = document.getElementById("x").value
+            document.getElementById("result").innerText = text.toUpperCase()
+        }
+
+    </script>
+</body>
+
+</html>

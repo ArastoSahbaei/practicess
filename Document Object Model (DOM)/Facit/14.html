@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>14</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div>
+            <button onclick="bounceBetweenOneAndFive()">Bounce between 1 and 5</button>
+        </div>
+
+        <div id="result" class="dashed">
+        </div>
+
+    </div>
+
+    <script>
+
+        let number = 3
+        let increasing = true
+
+        function bounceBetweenOneAndFive() {
+            if (increasing) {
+
+                number++
+                if (number > 5) {
+                    number = 4
+                    increasing = false
+                }
+            } else {
+                number--
+                if (number < 1) {
+                    number = 2
+                    increasing = true
+                }
+            }
+
+            render()
+        }
+
+        function render() {
+
+            document.getElementById("result").innerText = number
+        }
+
+        render()
+
+    </script>
+</body>
+
+</html>

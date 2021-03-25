@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>11</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div>
+            <button onclick="subtractOne()">-</button>
+        </div>
+
+        <div id="result" class="dashed">
+        </div>
+
+        <div>
+            <button onclick="addOne()">+</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        let number = 0
+
+        function subtractOne() {
+
+            number--
+
+            render()
+        }
+
+        function addOne() {
+
+            number++
+
+            render()
+        }
+
+        function render() {
+            document.getElementById("result").innerText = number
+        }
+
+        render()
+
+    </script>
+</body>
+
+</html>

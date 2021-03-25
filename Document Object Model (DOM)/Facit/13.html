@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>13</title>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div>
+            <button onclick="oneToFive()">One to five</button>
+        </div>
+
+        <div id="result" class="dashed">
+        </div>
+
+    </div>
+
+    <script>
+
+        let number = 3
+
+        function oneToFive() {
+            number += 1
+            if (number > 5) {
+                number = 1
+            }
+            render()
+        }
+
+        function render() {
+
+            document.getElementById("result").innerText = number
+        }
+
+        render()
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<title>01</title>
+</head>
+
+<body>
+
+	<div class="row">
+		<div>
+			<button onclick="printHello()">Print hello!</button>
+		</div>
+
+		<div id="result">
+		</div>
+	</div>
+
+	<script>
+		function printHello() {
+			document.getElementById("result").innerText = "hello!"
+		}
+	</script>
+</body>
+
+</html>

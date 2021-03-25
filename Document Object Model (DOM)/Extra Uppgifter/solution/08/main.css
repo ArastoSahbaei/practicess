@@ -1,0 +1,250 @@
+.numberCircle,
+.popup-itemadded,
+.popup-cart {
+    display: none;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-top:30px
+}
+
+.main {
+    width:800px;
+    margin:0 auto;
+    display:grid;
+    grid-template: 
+    '. . .'
+    'menu menu menu'
+    '. . .';
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: auto 40px auto;
+}
+
+.main > * {
+    background-color: rgb(240, 240, 240);
+    border:solid 1px black;
+    padding:20px;
+}
+
+.main > .menu {
+    padding:10px 20px;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+h1 {
+    margin-top:0
+}
+
+.logo {
+    background-image: url(../general/bokus.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search input{
+    width:90%;
+    line-height: 2em;
+    padding-left:1em;
+}
+
+.cart {
+    display: flex;
+    position: relative;
+}
+.cart img{
+    width:30%;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.cart button {
+    
+    font-size:10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.menu li {
+   padding-right: 12px;
+    cursor: pointer;
+    
+}
+
+
+.booklist {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:20px;
+    justify-content: space-between;
+    row-gap: 20px;
+
+}
+
+.booklist article {
+    width:100px;
+}
+
+.booklist article button {
+    width:100%;
+}
+
+.booklist h2 {
+    margin:0;
+    padding:0;
+    font-size: 10px;
+}
+
+.booklist p {
+    margin:0;
+    padding:0;
+    font-size:10px;
+    
+}
+
+.booklist .image {
+    height: 150px;
+    background-color:#333;
+}
+
+.popup-cart,
+.popup-itemadded {
+    position: absolute;
+    width:260px;
+    background-color:white;
+    border:solid 1px;
+    padding:10px;
+    top:70px;
+    left:-100px;
+    border-radius: 10px;
+}
+
+.popup-itemadded{
+    display: none;
+}
+
+.popup-itemadded .buttons{
+    display:grid;
+    row-gap: 10px;
+    column-gap: 10px; 
+
+    grid-template: 
+    'a a'
+    'b c'
+}
+
+.popup-itemadded .buttons button:nth-child(1){
+    grid-area: a;
+}
+
+.popup-itemadded .buttons button:nth-child(2){
+    grid-area: b;
+}
+
+.popup-itemadded .buttons button:nth-child(3){
+    grid-area: c;
+}
+
+.popup-itemadded .buttons button {
+    padding:5px;
+}
+
+.popup-cart .list article{
+    display: grid;
+    grid-template:
+    'a . b b'
+    'a . b b'
+    'a . c d'
+    ;
+    grid-template-columns: 70px 10px auto 70px;
+    margin-bottom: 20px;
+}
+.popup-cart .list article input {
+    width:15px
+}
+
+/* .popup-cart .list article > * {
+    border:solid 1px
+} */
+
+.popup-cart .list article > *:nth-child(1){
+    grid-area:a;
+    background-color:rgb(119, 119, 119);
+    height:100px;
+}
+
+.popup-cart .list article > *:nth-child(2){
+    grid-area:b;
+    margin:0;
+    font-weight: bold;
+}
+
+.popup-cart .list article > *:nth-child(3){
+    grid-area:c
+}
+
+.popup-cart .list article > *:nth-child(4){
+    grid-area:d;
+    justify-self: end;
+}
+
+.popup-cart .list-sum{
+    display: grid;
+    grid-template:
+    'a b'
+    'c c';
+    grid-template-columns: auto 70px;
+    margin-bottom: 20px;
+}
+
+.popup-cart .list-sum > *:nth-child(1){
+    grid-area:a;
+}
+.popup-cart .list-sum > *:nth-child(2){
+    grid-area:b;
+    justify-self: end;
+    font-weight: bold;
+}
+
+.popup-cart .list-sum > *:nth-child(3){
+    grid-area:c;
+    font-size:11px;
+}
+
+.popup-cart .buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.popup-cart .buttons button{
+    padding:5px;
+}
+
+.numberCircle {
+    position: absolute;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    left: 38px;
+    font: 12px Arial, sans-serif;
+    top: 35px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>09</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <div>
+            <label>a</label>
+            <input id="a" />
+        </div>
+
+        <div>
+            <label>b</label>
+            <input id="b" />
+        </div>
+
+        <div>
+            <button onclick="aGreaterThanB()">"a" is greater than "b"?</button>
+        </div>
+
+        <div id="result" class="dashed">
+        </div>
+
+    </div>
+
+    <script>
+        function aGreaterThanB() {
+
+            const numberA = parseFloat(document.getElementById("a").value)
+            const numberB = parseFloat(document.getElementById("b").value)
+
+            const result = numberA > numberB ? "Yes" : numberA === numberB ? "Equal" : "No"
+
+            document.getElementById("result").innerText = result
+        }
+
+    </script>
+</body>
+
+</html>
