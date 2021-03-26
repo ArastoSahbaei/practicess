@@ -1,1 +1,1 @@
-Officiella dokumentationen för useState: https://reactjs.org/docs/hooks-effect.html
+Officiella dokumentationen för useEffect: https://reactjs.org/docs/hooks-effect.html
