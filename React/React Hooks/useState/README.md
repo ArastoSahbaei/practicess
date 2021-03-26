@@ -1,8 +1,4 @@
 ## Övning 1
 ```javascript
-const x = 5;
-const y = 10;
-const isGreater = x > y;
-
-alert (isGreater)
+Använd useState och hårdkoda valfri data som visas i komponenten
 ```
