@@ -1,3 +1,5 @@
+Officiella dokumentationen för useState: https://reactjs.org/docs/hooks-state.html
+
 ## Övning 1
 ```
 Använd useState och hårdkoda valfri data. Använd sedan variabeln för att visa denna data grafiskt.
